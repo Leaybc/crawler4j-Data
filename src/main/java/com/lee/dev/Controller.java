@@ -13,7 +13,6 @@ public class Controller {
     public static void main(String[] args) throws Exception {
         String crawlStorageFolder = "d:/crawData/root";
         int numberOfCrawlers = 7;
-
         CrawlConfig config = new CrawlConfig();
         config.setCrawlStorageFolder(crawlStorageFolder);
 
@@ -55,5 +54,6 @@ public class Controller {
         //房产
         controller.addSeed("http://news.baidu.com/house");
         controller.start(MyCrawler.class, numberOfCrawlers);
+
     }
 }
